@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 os.makedirs('storage', exist_ok=True)
 
-# Register the RESTful DICOM API blueprint
+# Register the RESTful DICOM API blueprint for the code
 app.register_blueprint(dicom_bp)
 
 if __name__ == '__main__':
